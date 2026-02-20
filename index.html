@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepika Nuthalapati - Computer Vision & Applied AI Researcher</title>
+    <title>Deepika Nuthalapati - Computer Vision & Applied AI Researcher | USD 2AI Lab</title>
+    <meta name="description" content="Deepika Nuthalapati - Graduate Research Assistant specializing in Computer Vision, Applied AI, and Climate Impact Analysis at University of South Dakota 2AI Lab. Published researcher with expertise in Vision Transformers and Medical Imaging.">
+    <meta name="keywords" content="Deepika Nuthalapati, Computer Vision, Applied AI, Machine Learning, Climate Impact Analysis, Vision Transformers, Medical Imaging, USD 2AI Lab, Research, PyTorch, Remote Sensing">
+    <meta name="author" content="Deepika Nuthalapati">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Deepika Nuthalapati - Computer Vision & Applied AI Researcher">
+    <meta property="og:description" content="Graduate Research Assistant at USD 2AI Lab specializing in Climate Impact Analysis and Medical Imaging AI">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nuthalapatideepika.github.io/my-profile.github.io/">
+    <meta property="og:site_name" content="Deepika Nuthalapati Portfolio">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deepika Nuthalapati - AI Researcher">
+    <meta name="twitter:description" content="Computer Vision & Applied AI researcher at USD 2AI Lab">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    
+    <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Deepika Nuthalapati - Computer Vision & Applied AI • University of South Dakota • 2AI Lab">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Deepika Nuthalapati",
+      "jobTitle": "Graduate Research Assistant",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of South Dakota 2AI Lab"
+      },
+      "description": "Computer Vision & Applied AI researcher specializing in climate impact analysis and medical imaging",
+      "email": "Deepika.Nuthalapati@coyotes.usd.edu",
+      "url": "https://nuthalapatideepika.github.io/my-profile.github.io/",
+      "sameAs": [
+        "https://linkedin.com/in/deepika-nuthalapati",
+        "https://github.com/nuthalapatideepika"
+      ],
+      "knowsAbout": ["Computer Vision", "Applied AI", "Machine Learning", "Climate Impact Analysis", "Medical Imaging", "Vision Transformers"]
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -72,24 +115,50 @@
         }
         
         .cta-button {
-            background: white;
-            color: #333;
-            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #00a8e1, #0066cc);
+            color: white;
+            padding: 1.2rem 2.5rem;
             border: none;
             border-radius: 50px;
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            margin-bottom: 2rem;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 8px 25px rgba(0, 168, 225, 0.3);
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
         }
         
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 168, 225, 0.4);
+            background: linear-gradient(135deg, #0099cc, #004d99);
+        }
+        
+        .cta-button:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+        
+        .cta-subtitle {
+            font-size: 0.8rem;
+            margin-top: 0.3rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .portfolio-preview {
+            margin-bottom: 2rem;
+        }
+        
+        .preview-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            font-style: italic;
         }
         
         .quick-links {
@@ -149,6 +218,55 @@
             left: 0;
         }
         
+        .achievements {
+            text-align: center;
+            margin: 2rem auto 3rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(0, 168, 225, 0.1), rgba(102, 126, 234, 0.1));
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .achievements h3 {
+            color: #00a8e1;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .achievement-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .achievement-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .achievement-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00a8e1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .achievement-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+        }
+        
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -191,18 +309,41 @@
         </div>
         
         <div class="research-highlights">
-            <h3>🎯 Research Highlights</h3>
+            <h3>🎯 Research Excellence</h3>
             <ul>
-                <li>Climate Impact ViT (spatiotemporal transformers)</li>
-                <li>Medical Imaging — Pneumonia CNN</li>
-                <li>OAK Supercomputing Conference 2024</li>
-                <li>USGS EROS Fall Poster Session 2024</li>
+                <li><strong>Climate Impact ViT:</strong> Multi-Modal Spatial-Temporal Vision Transformer for Climate Change Impact Analysis in South Dakota</li>
+                <li><strong>Medical AI:</strong> CNN-based Pneumonia Detection with Advanced Feature Engineering</li>
+                <li><strong>Publications:</strong> OAK Supercomputing Conference 2024, USGS EROS Fall Session</li>
+                <li><strong>Recognition:</strong> SD EPSCoR Research Symposium Presenter (#67p)</li>
             </ul>
         </div>
         
+        <div class="achievements">
+            <h3>🏆 Achievements & Impact</h3>
+            <div class="achievement-grid">
+                <div class="achievement-item">
+                    <span class="achievement-number">476</span>
+                    <span class="achievement-label">GitHub Contributions</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">3+</span>
+                    <span class="achievement-label">Research Publications</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">2024</span>
+                    <span class="achievement-label">M.S. Graduate</span>
+                </div>
+            </div>
+        </div>
+        
         <a href="platform-selector.html" class="cta-button">
-            🎨 Explore Portfolio Styles
+            🚀 Explore My Research Portfolio
+            <span class="cta-subtitle">Multiple Viewing Experiences Available</span>
         </a>
+        
+        <div class="portfolio-preview">
+            <p class="preview-text">Choose from Netflix-style, Prime Video, LinkedIn, and more portfolio experiences</p>
+        </div>
         
         <div class="quick-links">
             <a href="media-hub.html" class="quick-link">🎬 Netflix Style</a>
@@ -214,21 +355,86 @@
     </div>
 
     <script>
-        // Add some interactive effects
+        // Enhanced interactive effects
         document.addEventListener('DOMContentLoaded', function() {
-            // Add click effect to profile image
+            // Profile image interaction
             const profileImage = document.querySelector('.profile-image');
             profileImage.addEventListener('click', function() {
-                this.style.transform = 'scale(1.1)';
+                this.style.transform = 'scale(1.1) rotate(5deg)';
                 setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 200);
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                }, 300);
             });
             
-            // Auto-redirect option (commented out for choice)
-            // setTimeout(() => {
-            //     window.location.href = 'platform-selector.html';
-            // }, 5000);
+            // Animated typing effect for subtitle
+            const subtitle = document.querySelector('.subtitle');
+            const originalText = subtitle.textContent;
+            subtitle.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    subtitle.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            };
+            
+            setTimeout(typeWriter, 1000);
+            
+            // Parallax effect for background
+            document.addEventListener('mousemove', (e) => {
+                const container = document.querySelector('.landing-container');
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                container.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
+            });
+            
+            // Achievement counters animation
+            const achievementNumbers = document.querySelectorAll('.achievement-number');
+            const observerOptions = {
+                threshold: 0.5
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const finalValue = target.textContent;
+                        let currentValue = 0;
+                        
+                        if (finalValue.includes('+')) {
+                            const num = parseInt(finalValue);
+                            const increment = Math.ceil(num / 50);
+                            
+                            const counter = setInterval(() => {
+                                currentValue += increment;
+                                if (currentValue >= num) {
+                                    target.textContent = finalValue;
+                                    clearInterval(counter);
+                                } else {
+                                    target.textContent = currentValue + '+';
+                                }
+                            }, 30);
+                        }
+                        
+                        observer.unobserve(target);
+                    }
+                });
+            }, observerOptions);
+            
+            achievementNumbers.forEach(number => observer.observe(number));
+            
+            // Enhanced CTA button effects
+            const ctaButton = document.querySelector('.cta-button');
+            ctaButton.addEventListener('mouseenter', function() {
+                this.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+            });
+            
+            ctaButton.addEventListener('mouseleave', function() {
+                this.style.background = 'linear-gradient(135deg, #00a8e1, #0066cc)';
+            });
         });
     </script>
 </body>

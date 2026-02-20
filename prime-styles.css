@@ -461,7 +461,23 @@ body {
     height: 100%;
     background: linear-gradient(90deg, #00a8e1 0%, #0066cc 100%);
     border-radius: 3px;
-    transition: width 1s ease-out;
+    transition: width 1.5s ease-out;
+    width: 0%;
+}
+
+.expert-level {
+    width: 95% !important;
+    background: linear-gradient(90deg, #00a8e1 0%, #0066cc 100%);
+}
+
+.advanced-level {
+    width: 85% !important;
+    background: linear-gradient(90deg, #4ecdc4 0%, #44a08d 100%);
+}
+
+.proficient-level {
+    width: 75% !important;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
 }
 
 .skill-description {
