@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepika Nuthalapati - Computer Vision & Applied AI Researcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Deepika Nuthalapati - Computer Vision & Applied AI • University of South Dakota • 2AI Lab">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .landing-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #00a8e1, #0066cc);
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
+        }
+        
+        .affiliation {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .description {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #333;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .quick-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .quick-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .quick-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .research-highlights {
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .research-highlights h3 {
+            color: #00a8e1;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .research-highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .research-highlights li {
+            padding: 0.5rem 0;
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .research-highlights li:before {
+            content: '🔬';
+            position: absolute;
+            left: 0;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+            }
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .research-highlights {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <div class="profile-image">
+            👩‍🎓
+        </div>
+        
+        <h1>Deepika Nuthalapati</h1>
+        <div class="subtitle">Computer Vision & Applied AI</div>
+        <div class="affiliation">University of South Dakota • 2AI Lab</div>
+        <div class="description">
+            Graduate Research Assistant specializing in multimodal spatiotemporal transformers for remote-sensing-driven climate impact analysis and medical imaging applications.
+        </div>
+        
+        <div class="research-highlights">
+            <h3>🎯 Research Highlights</h3>
+            <ul>
+                <li>Climate Impact ViT (spatiotemporal transformers)</li>
+                <li>Medical Imaging — Pneumonia CNN</li>
+                <li>OAK Supercomputing Conference 2024</li>
+                <li>USGS EROS Fall Poster Session 2024</li>
+            </ul>
+        </div>
+        
+        <a href="platform-selector.html" class="cta-button">
+            🎨 Explore Portfolio Styles
+        </a>
+        
+        <div class="quick-links">
+            <a href="media-hub.html" class="quick-link">🎬 Netflix Style</a>
+            <a href="prime-portfolio.html" class="quick-link">📺 Prime Style</a>
+            <a href="mailto:Deepika.Nuthalapati@coyotes.usd.edu" class="quick-link">📧 Contact</a>
+            <a href="https://linkedin.com/in/deepika-nuthalapati" target="_blank" rel="noopener" class="quick-link">💼 LinkedIn</a>
+            <a href="https://github.com/nuthalapatideepika" target="_blank" rel="noopener" class="quick-link">💻 GitHub</a>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effect to profile image
+            const profileImage = document.querySelector('.profile-image');
+            profileImage.addEventListener('click', function() {
+                this.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+            
+            // Auto-redirect option (commented out for choice)
+            // setTimeout(() => {
+            //     window.location.href = 'platform-selector.html';
+            // }, 5000);
+        });
+    </script>
+</body>
+</html>

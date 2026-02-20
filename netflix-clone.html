@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinematic Research Hub - Deepika Nuthalapati Portfolio</title>
-    <meta name="description" content="Explore Deepika Nuthalapati's research portfolio in an immersive cinematic interface showcasing Computer Vision, AI, and Climate Impact studies.">
-    <meta property="og:title" content="Cinematic Research Hub - Deepika Nuthalapati">
-    <meta property="og:description" content="Computer Vision & Applied AI Research Portfolio">
-    <meta property="twitter:title" content="Cinematic Research Hub - Deepika Nuthalapati">
-    <link rel="stylesheet" href="styles.css">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -17,16 +13,26 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
-                <div class="research-logo">
-                    <h1>RESEARCH<span>HUB</span></h1>
+                <div class="netflix-logo">
+                    <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="false">
+                        <g id="netflix-logo">
+                            <path d="M105.06233,14.2343053 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2343053 Z" fill="#E50914"></path>
+                            <path d="M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z" fill="#E50914"></path>
+                            <path d="M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z" fill="#E50914"></path>
+                            <path d="M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z" fill="#E50914"></path>
+                            <path d="M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.1993687,-5.68434189e-14 L50.1993687,4.68741213 L45.3435186,4.68741213 Z" fill="#E50914"></path>
+                            <path d="M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z" fill="#E50914"></path>
+                            <path d="M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" fill="#E50914"></path>
+                        </g>
+                    </svg>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Publications</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                    <li><a href="#">Browse by Languages</a></li>
                 </ul>
             </div>
             <div class="nav-right">
@@ -44,25 +50,25 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Deepika Nuthalapati</h1>
+                <h1 class="hero-title">Stranger Things</h1>
                 <p class="hero-description">
-                    Computer Vision & Applied AI Researcher at University of South Dakota • 2AI Lab. 
-                    Specializing in multimodal spatiotemporal transformers for climate impact analysis and medical imaging.
+                    When a young boy vanishes, a small town uncovers a mystery involving secret experiments, 
+                    terrifying supernatural forces and one strange little girl.
                 </p>
                 <div class="hero-info">
-                    <span class="year">M.S. 2024</span>
-                    <span class="rating">Research</span>
-                    <span class="seasons">Publications</span>
+                    <span class="year">2016</span>
+                    <span class="rating">TV-14</span>
+                    <span class="seasons">4 Seasons</span>
                     <div class="genres">
-                        <span>Computer Vision</span>
-                        <span>Machine Learning</span>
-                        <span>Remote Sensing</span>
+                        <span>Sci-Fi</span>
+                        <span>Horror</span>
+                        <span>Drama</span>
                     </div>
                 </div>
                 <div class="hero-buttons">
                     <button class="btn-play">
                         <i class="fas fa-play"></i>
-                        View Research
+                        Play
                     </button>
                     <button class="btn-info">
                         <i class="fas fa-info-circle"></i>
@@ -78,26 +84,26 @@
     <main class="main-content">
         <!-- Trending Now -->
         <section class="content-row">
-            <h2 class="row-title">Featured Research</h2>
+            <h2 class="row-title">Trending Now</h2>
             <div class="row-container">
                 <div class="movie-row">
                     <div class="movie-card">
-                        <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=300&h=450&fit=crop&auto=format&q=80" alt="Climate Impact ViT Research">
+                        <img src="https://images.unsplash.com/photo-1489599651882-b5066ce8709c?w=300&h=450&fit=crop&auto=format&q=80" alt="Movie">
                         <div class="movie-info">
                             <div class="movie-controls">
-                                <button class="control-btn play-btn" aria-label="View Climate Impact ViT Research"><i class="fas fa-play"></i></button>
-                                <button class="control-btn" aria-label="Add Climate Impact ViT to My List"><i class="fas fa-plus"></i></button>
-                                <button class="control-btn" aria-label="Like Climate Impact ViT Research"><i class="fas fa-thumbs-up"></i></button>
-                                <button class="control-btn" aria-label="Share Climate Impact ViT Research"><i class="fas fa-share"></i></button>
+                                <button class="control-btn play-btn" aria-label="Play The Queen's Gambit"><i class="fas fa-play"></i></button>
+                                <button class="control-btn" aria-label="Add The Queen's Gambit to My List"><i class="fas fa-plus"></i></button>
+                                <button class="control-btn" aria-label="Like The Queen's Gambit"><i class="fas fa-thumbs-up"></i></button>
+                                <button class="control-btn" aria-label="Dislike The Queen's Gambit"><i class="fas fa-thumbs-down"></i></button>
                             </div>
                             <div class="movie-details">
-                                <h3>Climate Impact ViT (South Dakota)</h3>
+                                <h3>The Queen's Gambit</h3>
                                 <div class="movie-meta">
-                                    <span class="match">Featured</span>
-                                    <span class="year">2024</span>
-                                    <span class="rating">Research</span>
+                                    <span class="match">98% Match</span>
+                                    <span class="year">2020</span>
+                                    <span class="rating">TV-MA</span>
                                 </div>
-                                <div class="movie-genres">Computer Vision • Remote Sensing • Climate Analysis</div>
+                                <div class="movie-genres">Drama • Coming of Age</div>
                             </div>
                         </div>
                     </div>
@@ -124,22 +130,22 @@
                     </div>
 
                     <div class="movie-card">
-                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=450&fit=crop&auto=format&q=80" alt="Medical Imaging Pneumonia CNN">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=450&fit=crop&auto=format&q=80" alt="Movie">
                         <div class="movie-info">
                             <div class="movie-controls">
-                                <button class="control-btn play-btn" aria-label="View Medical Imaging CNN Research"><i class="fas fa-play"></i></button>
-                                <button class="control-btn" aria-label="Add Medical Imaging CNN to My List"><i class="fas fa-plus"></i></button>
-                                <button class="control-btn" aria-label="Like Medical Imaging CNN Research"><i class="fas fa-thumbs-up"></i></button>
-                                <button class="control-btn" aria-label="Share Medical Imaging CNN Research"><i class="fas fa-share"></i></button>
+                                <button class="control-btn play-btn" aria-label="Play Money Heist"><i class="fas fa-play"></i></button>
+                                <button class="control-btn" aria-label="Add Money Heist to My List"><i class="fas fa-plus"></i></button>
+                                <button class="control-btn" aria-label="Like Money Heist"><i class="fas fa-thumbs-up"></i></button>
+                                <button class="control-btn" aria-label="Dislike Money Heist"><i class="fas fa-thumbs-down"></i></button>
                             </div>
                             <div class="movie-details">
-                                <h3>Medical Imaging — Pneumonia CNN</h3>
+                                <h3>Money Heist</h3>
                                 <div class="movie-meta">
-                                    <span class="match">Published</span>
-                                    <span class="year">2024</span>
-                                    <span class="rating">AI/ML</span>
+                                    <span class="match">92% Match</span>
+                                    <span class="year">2017</span>
+                                    <span class="rating">TV-MA</span>
                                 </div>
-                                <div class="movie-genres">Medical Imaging • Deep Learning • CNNs</div>
+                                <div class="movie-genres">Crime • Thriller</div>
                             </div>
                         </div>
                     </div>
@@ -356,7 +362,7 @@
                     <div class="movie-card continue-watching">
                         <img src="https://images.unsplash.com/photo-1489599651882-b5066ce8709c?w=300&h=450&fit=crop&auto=format&q=80" alt="Movie">
                         <div class="progress-bar">
-                            <div class="progress-fill progress-35"></div>
+                            <div class="progress-fill" style="width: 35%"></div>
                         </div>
                         <div class="movie-info">
                             <div class="movie-controls">
@@ -380,7 +386,7 @@
                     <div class="movie-card continue-watching">
                         <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=300&h=450&fit=crop&auto=format&q=80" alt="Movie">
                         <div class="progress-bar">
-                            <div class="progress-fill progress-78"></div>
+                            <div class="progress-fill" style="width: 78%"></div>
                         </div>
                         <div class="movie-info">
                             <div class="movie-controls">
@@ -404,7 +410,7 @@
                     <div class="movie-card continue-watching">
                         <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=450&fit=crop&auto=format&q=80" alt="Movie">
                         <div class="progress-bar">
-                            <div class="progress-fill progress-12"></div>
+                            <div class="progress-fill" style="width: 12%"></div>
                         </div>
                         <div class="movie-info">
                             <div class="movie-controls">
@@ -428,7 +434,7 @@
                     <div class="movie-card continue-watching">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=450&fit=crop&auto=format&q=80" alt="Movie">
                         <div class="progress-bar">
-                            <div class="progress-fill progress-67"></div>
+                            <div class="progress-fill" style="width: 67%"></div>
                         </div>
                         <div class="movie-info">
                             <div class="movie-controls">
@@ -455,6 +461,6 @@
         </section>
     </main>
 
-    <script src="hub-script.js"></script>
+    <script src="netflix-script.js"></script>
 </body>
 </html>

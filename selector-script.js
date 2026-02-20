@@ -111,71 +111,91 @@ function addPlatformSpecificEffects(card, platform) {
     card.classList.add('platform-hover');
     
     switch(platform) {
-        case 'netflix':
-            addNetflixEffects(card);
+        case 'cinematic':
+            addCinematicEffects(card);
             break;
-        case 'prime':
-            addPrimeEffects(card);
+        case 'studio':
+            addStudioEffects(card);
             break;
-        case 'linkedin':
-            addLinkedInEffects(card);
+        case 'network':
+            addNetworkEffects(card);
             break;
-        case 'instagram':
-            addInstagramEffects(card);
+        case 'visual':
+            addVisualEffects(card);
             break;
-        case 'tiktok':
-            addTikTokEffects(card);
+        case 'stream':
+            addStreamEffects(card);
             break;
-        case 'youtube':
-            addYouTubeEffects(card);
+        case 'theater':
+            addTheaterEffects(card);
             break;
     }
 }
 
-function addNetflixEffects(card) {
-    const progressBars = card.querySelectorAll('.preview-row::after');
-    // Animate progress bars
-    card.style.setProperty('--netflix-glow', '0 0 20px rgba(229, 9, 20, 0.3)');
+function addCinematicEffects(card) {
+    const shimmer = card.querySelector('.hero-shimmer');
+    if (shimmer) {
+        shimmer.style.animation = 'shimmer 1.5s ease-in-out infinite';
+    }
+    card.style.setProperty('--cinematic-glow', '0 0 20px rgba(220, 53, 69, 0.3)');
 }
 
-function addPrimeEffects(card) {
-    const banner = card.querySelector('.preview-banner');
-    if (banner) {
-        banner.style.background = 'linear-gradient(135deg, #00A8E1 0%, #0099cc 50%, #0066cc 100%)';
+function addStudioEffects(card) {
+    const gradient = card.querySelector('.banner-gradient');
+    if (gradient) {
+        gradient.style.background = 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%)';
+        gradient.style.animation = 'gradientShift 2s ease-in-out infinite';
     }
 }
 
-function addLinkedInEffects(card) {
-    const avatar = card.querySelector('.profile-avatar');
-    if (avatar) {
-        avatar.style.background = 'linear-gradient(135deg, #0A66C2 0%, #004182 100%)';
+function addNetworkEffects(card) {
+    const connectionNodes = card.querySelectorAll('.connection-node');
+    connectionNodes.forEach((node, index) => {
+        node.style.animation = `pulse ${1.5 + index * 0.3}s ease-in-out infinite`;
+        node.style.background = '#0ea5e9';
+    });
+    const connectionLine = card.querySelector('.connection-line');
+    if (connectionLine) {
+        connectionLine.style.animation = 'slideIn 1s ease-in-out infinite';
     }
 }
 
-function addInstagramEffects(card) {
-    const stories = card.querySelectorAll('.story-circle');
-    stories.forEach((story, index) => {
-        setTimeout(() => {
-            story.style.transform = 'scale(1.1)';
-            story.style.transition = 'transform 0.3s ease';
-        }, index * 100);
+function addVisualEffects(card) {
+    const gradientElements = card.querySelectorAll('.gradient-circle, .gradient-square');
+    gradientElements.forEach((element, index) => {
+        element.style.animation = `rotate ${2 + index}s linear infinite`;
+        element.style.filter = 'hue-rotate(45deg)';
+    });
+    const storyCircles = card.querySelectorAll('.story-circle');
+    storyCircles.forEach((circle, index) => {
+        circle.style.animation = `bounce ${1 + index * 0.2}s ease-in-out infinite`;
     });
 }
 
-function addTikTokEffects(card) {
-    const actionButtons = card.querySelectorAll('.action-button');
-    actionButtons.forEach((button, index) => {
-        setTimeout(() => {
-            button.style.background = index % 2 === 0 ? '#fe2c55' : '#25f4ee';
-            button.style.transform = 'scale(1.1)';
-        }, index * 150);
+function addStreamEffects(card) {
+    const waveLines = card.querySelectorAll('.wave-line');
+    waveLines.forEach((line, index) => {
+        line.style.animation = `wave ${1.5 + index * 0.3}s ease-in-out infinite`;
+        line.style.background = `linear-gradient(90deg, 
+            rgba(34, 197, 94, 0.8) 0%, 
+            rgba(59, 130, 246, 0.8) 50%, 
+            rgba(168, 85, 247, 0.8) 100%)`;
     });
+    const playPulse = card.querySelector('.play-pulse');
+    if (playPulse) {
+        playPulse.style.animation = 'pulse 1.5s ease-in-out infinite';
+    }
 }
 
-function addYouTubeEffects(card) {
-    const player = card.querySelector('.preview-player');
-    if (player) {
-        player.style.background = 'linear-gradient(135deg, #FF0000 0%, #cc0000 100%)';
+function addTheaterEffects(card) {
+    const spotlight = card.querySelector('.spotlight');
+    if (spotlight) {
+        spotlight.style.animation = 'spotlight 2s ease-in-out infinite';
+        spotlight.style.background = 'radial-gradient(circle, rgba(255, 215, 0, 0.8) 0%, transparent 70%)';
+    }
+    const screen = card.querySelector('.screen');
+    if (screen) {
+        screen.style.boxShadow = '0 0 15px rgba(255, 215, 0, 0.3)';
     }
 }
 
@@ -183,14 +203,14 @@ function navigateToPlatform(platform) {
     // Show loading state
     showLoadingOverlay(platform);
     
-    // Platform-specific navigation
+    // Platform-specific navigation with new generic names
     const navigationMap = {
-        'netflix': 'media-hub.html',
-        'prime': 'prime-portfolio.html',
-        'linkedin': 'linkedin-portfolio.html',
-        'instagram': 'instagram-portfolio.html',
-        'tiktok': 'tiktok-portfolio.html',
-        'youtube': 'youtube-portfolio.html'
+        'cinematic': 'media-hub.html',
+        'studio': 'prime-portfolio.html',
+        'network': 'network-portfolio.html',
+        'visual': 'visual-portfolio.html',
+        'stream': 'stream-portfolio.html',
+        'theater': 'theater-portfolio.html'
     };
     
     const targetUrl = navigationMap[platform];
@@ -198,8 +218,11 @@ function navigateToPlatform(platform) {
     if (targetUrl) {
         // Smooth transition with platform-specific styling
         setTimeout(() => {
-            if (platform === 'netflix') {
-                // Netflix already exists
+            if (platform === 'cinematic') {
+                // Cinematic experience (formerly Netflix-style)
+                window.location.href = targetUrl;
+            } else if (platform === 'studio') {
+                // Executive Studio (formerly Prime-style)
                 window.location.href = targetUrl;
             } else {
                 // For other platforms, show coming soon or redirect to a placeholder
