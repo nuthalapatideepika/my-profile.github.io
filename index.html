@@ -3,569 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepika Nuthalapati - Developer Portfolio</title>
-    <meta name="description" content="Full Stack Developer - Resume Portfolio">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Deepika Nuthalapati - Computer Vision & Applied AI Researcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Deepika Nuthalapati - Computer Vision & Applied AI • University of South Dakota • 2AI Lab">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .landing-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #00a8e1, #0066cc);
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
+        }
+        
+        .affiliation {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .description {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #333;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .quick-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .quick-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .quick-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .research-highlights {
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .research-highlights h3 {
+            color: #00a8e1;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .research-highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .research-highlights li {
+            padding: 0.5rem 0;
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .research-highlights li:before {
+            content: '🔬';
+            position: absolute;
+            left: 0;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+            }
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .research-highlights {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Main Header -->
-    <header class="main-header">
-        <div class="header-container">
-            <div class="header-left">
-                <div class="logo-container">
-                    <div class="personal-logo">NUTHALAPATI</div>
-                </div>
-                <nav class="nav-menu">
-                    <a href="#home" class="nav-link active">Home</a>
-                    <a href="#summary" class="nav-link">Professional Summary</a>
-                    <a href="#technical-expertise" class="nav-link">Technical Expertise</a>
-                    <a href="#experience" class="nav-link">Professional Experience</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#certifications" class="nav-link">Certifications</a>
-                </nav>
-            </div>
-            <div class="header-right">
-                <button class="search-icon" aria-label="Search">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                    </svg>
-                </button>
-                <span class="portfolio-link">Portfolio</span>
-                <button class="notifications-icon" aria-label="Notifications">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
-                    </svg>
-                </button>
-                <div class="profile-menu">
-                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face&auto=format&q=80" alt="Profile" class="profile-avatar">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="dropdown-icon">
-                        <path d="M11.5976 6.5C11.7461 6.5 11.8204 6.67956 11.7154 6.78457L8.35991 10.1401C8.16465 10.3353 7.83535 10.3353 7.64009 10.1401L4.28457 6.78457C4.17956 6.67956 4.25393 6.5 4.40244 6.5H11.5976Z"/>
-                    </svg>
-                </div>
-            </div>
+    <div class="landing-container">
+        <div class="profile-image">
+            👩‍🎓
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-background">
-            <video autoplay muted loop class="hero-video">
-                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
+        
+        <h1>Deepika Nuthalapati</h1>
+        <div class="subtitle">Computer Vision & Applied AI</div>
+        <div class="affiliation">University of South Dakota • 2AI Lab</div>
+        <div class="description">
+            Graduate Research Assistant specializing in multimodal spatiotemporal transformers for remote-sensing-driven climate impact analysis and medical imaging applications.
         </div>
-        <div class="hero-content">
-            <div class="portfolio-badge">DEEPIKA</div>
-            <h1 class="hero-title">NUTHALAPATI</h1>
-            <p class="hero-subtitle">Full Stack Developer coming soon</p>
-            <p class="hero-description">
-                Experienced developer specializing in modern web technologies and cloud architecture. 
-                Passionate about building scalable applications and solving complex technical challenges 
-                with innovative solutions.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn-play">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                    Play
-                </button>
-                <button class="btn-info">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2ZM13,17H11V11H13V17ZM13,9H11V7H13V9Z"/>
-                    </svg>
-                    More Info
-                </button>
-            </div>
-            <div class="maturity-rating">4+ Years Experience</div>
+        
+        <div class="research-highlights">
+            <h3>🎯 Research Highlights</h3>
+            <ul>
+                <li>Climate Impact ViT (spatiotemporal transformers)</li>
+                <li>Medical Imaging — Pneumonia CNN</li>
+                <li>OAK Supercomputing Conference 2024</li>
+                <li>USGS EROS Fall Poster Session 2024</li>
+            </ul>
         </div>
-    </section>
+        
+        <a href="platform-selector.html" class="cta-button">
+            🎨 Explore Portfolio Styles
+        </a>
+        
+        <div class="quick-links">
+            <a href="media-hub.html" class="quick-link">🎬 Netflix Style</a>
+            <a href="prime-portfolio.html" class="quick-link">📺 Prime Style</a>
+            <a href="mailto:Deepika.Nuthalapati@coyotes.usd.edu" class="quick-link">📧 Contact</a>
+            <a href="https://linkedin.com/in/deepika-nuthalapati" target="_blank" rel="noopener" class="quick-link">💼 LinkedIn</a>
+            <a href="https://github.com/nuthalapatideepika" target="_blank" rel="noopener" class="quick-link">💻 GitHub</a>
+        </div>
+    </div>
 
-    <!-- Main Content -->
-    <main class="portfolio-main">
-        <!-- Professional Summary Section -->
-        <section id="summary" class="content-row">
-            <h2 class="row-title">Professional Summary</h2>
-            <div class="slider-container">
-                <div class="content-slider">
-                    <div class="portfolio-card featured">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=225&fit=crop&auto=format&q=80" alt="Professional Summary" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="card-controls">
-                                <button class="control-btn play" aria-label="Play">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M8 5v14l11-7z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn add" aria-label="Add to list">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn like" aria-label="Like">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Experienced Full Stack Developer</h3>
-                            <p>4+ Years Experience • Multiple Industries</p>
-                            <p>Passionate about creating scalable web applications</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&h=169&fit=crop&auto=format&q=80" alt="Leadership" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Technical Leadership</h3>
-                            <p>Leading cross-functional teams to deliver innovative solutions</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=300&h=169&fit=crop&auto=format&q=80" alt="Innovation" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Innovation Focus</h3>
-                            <p>Implementing cutting-edge technologies and best practices</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=169&fit=crop&auto=format&q=80" alt="Problem Solving" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Problem Solver</h3>
-                            <p>Analyzing complex challenges and delivering effective solutions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Expertise Section -->
-        <section id="technical-expertise" class="content-row">
-            <h2 class="row-title">Technical Expertise</h2>
-            <div class="slider-container">
-                <div class="content-slider">
-                    <div class="portfolio-card featured">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=400&h=225&fit=crop&auto=format&q=80" alt="Frontend Technologies" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="card-controls">
-                                <button class="control-btn play" aria-label="Play">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M8 5v14l11-7z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn add" aria-label="Add to list">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn like" aria-label="Like">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Frontend Development</h3>
-                            <p>React • Angular • Vue.js • TypeScript</p>
-                            <p>Modern UI/UX frameworks and responsive design</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=169&fit=crop&auto=format&q=80" alt="Backend Technologies" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Backend Development</h3>
-                            <p>Node.js • Python • Java • .NET Core</p>
-                            <p>RESTful APIs • GraphQL • Microservices</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=169&fit=crop&auto=format&q=80" alt="Cloud & DevOps" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Cloud & DevOps</h3>
-                            <p>AWS • Azure • Docker • Kubernetes</p>
-                            <p>CI/CD pipelines and infrastructure automation</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=300&h=169&fit=crop&auto=format&q=80" alt="Database Technologies" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Database Technologies</h3>
-                            <p>MongoDB • PostgreSQL • MySQL • Redis</p>
-                            <p>Data modeling and optimization</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=169&fit=crop&auto=format&q=80" alt="Tools & Frameworks" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Development Tools</h3>
-                            <p>Git • Jenkins • Jira • VS Code</p>
-                            <p>Agile methodologies and project management</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Professional Experience Section -->
-        <section id="experience" class="content-row">
-            <h2 class="row-title">Professional Experience</h2>
-            <div class="slider-container">
-                <div class="content-slider">
-                    <div class="portfolio-card featured">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=225&fit=crop&auto=format&q=80" alt="Current Role" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="card-controls">
-                                <button class="control-btn play" aria-label="Play">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M8 5v14l11-7z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn add" aria-label="Add to list">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn like" aria-label="Like">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Senior Full Stack Developer</h3>
-                            <p>TechFlow Solutions • 2023 - Present</p>
-                            <p>Leading development teams and architecting scalable solutions</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=169&fit=crop&auto=format&q=80" alt="Previous Role 1" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Full Stack Developer</h3>
-                            <p>DataDriven Inc • 2022 - 2023</p>
-                            <p>Developed enterprise web applications and APIs</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=169&fit=crop&auto=format&q=80" alt="Previous Role 2" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Software Developer</h3>
-                            <p>MobileTech Startup • 2021 - 2022</p>
-                            <p>Built mobile and web applications using modern frameworks</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=169&fit=crop&auto=format&q=80" alt="Junior Role" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Junior Software Engineer</h3>
-                            <p>CodeCraft Technologies • 2020 - 2021</p>
-                            <p>Started career in software development and web technologies</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="content-row">
-        <!-- Education Section -->
-        <section id="education" class="content-row">
-            <h2 class="row-title">Education</h2>
-            <div class="slider-container">
-                <div class="content-slider">
-                    <div class="portfolio-card featured">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=225&fit=crop&auto=format&q=80" alt="Masters Degree" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="card-controls">
-                                <button class="control-btn play" aria-label="Play">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M8 5v14l11-7z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn add" aria-label="Add to list">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn like" aria-label="Like">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Master of Computer Science</h3>
-                            <p>University Name • 2018-2020 • GPA: 3.8/4.0</p>
-                            <p>Specialized in Software Engineering and Data Science</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=300&h=169&fit=crop&auto=format&q=80" alt="Bachelor Degree" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Bachelor of Technology</h3>
-                            <p>Computer Science Engineering • 2014-2018</p>
-                            <p>First Class with Distinction</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=300&h=169&fit=crop&auto=format&q=80" alt="Relevant Coursework" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Relevant Coursework</h3>
-                            <p>Data Structures • Algorithms • Database Management</p>
-                            <p>Software Engineering • Web Technologies</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=300&h=169&fit=crop&auto=format&q=80" alt="Academic Projects" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Academic Achievements</h3>
-                            <p>Dean's List • Research Publications</p>
-                            <p>Final Year Project: Machine Learning Application</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="content-row">
-            <h2 class="row-title">Certifications</h2>
-            <div class="slider-container">
-                <div class="content-slider">
-                    <div class="portfolio-card featured">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=400&h=225&fit=crop&auto=format&q=80" alt="AWS Certification" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="card-controls">
-                                <button class="control-btn play" aria-label="Play">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M8 5v14l11-7z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn add" aria-label="Add to list">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                                    </svg>
-                                </button>
-                                <button class="control-btn like" aria-label="Like">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>AWS Solutions Architect</h3>
-                            <p>Amazon Web Services • 2023 • Professional Level</p>
-                            <p>Cloud architecture and infrastructure design</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=300&h=169&fit=crop&auto=format&q=80" alt="Google Cloud" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Google Cloud Professional</h3>
-                            <p>Google Cloud Platform • 2023</p>
-                            <p>Cloud development and deployment</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=169&fit=crop&auto=format&q=80" alt="React Certification" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>React Developer Certification</h3>
-                            <p>Meta (Facebook) • 2022 • Advanced Level</p>
-                            <p>Modern frontend development with React</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=300&h=169&fit=crop&auto=format&q=80" alt="Kubernetes" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Certified Kubernetes Administrator</h3>
-                            <p>Cloud Native Computing Foundation • 2023</p>
-                            <p>Container orchestration and management</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div class="card-media">
-                            <video muted loop preload="none" class="card-video">
-                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                            </video>
-                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=169&fit=crop&auto=format&q=80" alt="DevOps" class="card-thumbnail">
-                            <div class="video-progress">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <h3>Azure DevOps Engineer Expert</h3>
-                            <p>Microsoft • 2022 • Expert Level</p>
-                            <p>CI/CD pipelines and automation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+    <script>
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effect to profile image
+            const profileImage = document.querySelector('.profile-image');
+            profileImage.addEventListener('click', function() {
+                this.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+            
+            // Auto-redirect option (commented out for choice)
+            // setTimeout(() => {
+            //     window.location.href = 'platform-selector.html';
+            // }, 5000);
+        });
+    </script>
 </body>
 </html>
