@@ -760,9 +760,6 @@ style.textContent = `
     .btn-secondary {
         animation: fadeInUp 0.6s ease-out 0.5s forwards;
         opacity: 0;
-    }
-    
-    .btn-secondary {
         animation-delay: 0.7s;
     }
 `;
