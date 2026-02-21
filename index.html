@@ -4,19 +4,17 @@
     <title>Deepika Nuthalapati</title>
     <style>
         body { 
-            background: #000000; 
-            color: white; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            background: #f5f5f5; 
+            color: #333; 
+            font-family: Arial, sans-serif; 
             padding: 50px; 
             margin: 0;
         }
         h1 { 
             font-size: 50px; 
             text-align: center; 
-            color: #E50914;
+            color: #333;
             font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
             margin-bottom: 60px;
         }
         .cards { 
@@ -28,34 +26,52 @@
             margin: 0 auto;
         }
         .card { 
-            background: #141414; 
-            color: white; 
+            background: white; 
+            color: #333; 
             padding: 25px; 
             border-radius: 8px; 
-            border: 2px solid #333333;
+            border: 1px solid #ddd;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .card h3 { 
+            color: #555; 
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #666;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        /* Netflix style for first card only */
+        .card:first-child { 
+            background: #141414; 
+            color: white; 
+            border: 2px solid #333333;
             position: relative;
             overflow: hidden;
         }
-        .card:hover {
+        .card:first-child:hover {
             transform: scale(1.05);
             border-color: #E50914;
             box-shadow: 0 8px 25px rgba(229, 9, 20, 0.3);
         }
-        .card h3 { 
+        .card:first-child h3 { 
             color: #E50914; 
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        .card p {
+        .card:first-child p {
             color: #CCCCCC;
-            line-height: 1.5;
-            font-size: 14px;
         }
-        .card::before {
+        .card:first-child::before {
             content: '';
             position: absolute;
             top: 0;
@@ -66,7 +82,7 @@
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
-        .card:hover::before {
+        .card:first-child:hover::before {
             transform: scaleX(1);
         }
     </style>
