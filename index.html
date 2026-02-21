@@ -3,11 +3,72 @@
 <head>
     <title>Deepika Nuthalapati</title>
     <style>
-        body { background: #667eea; color: white; font-family: Arial; padding: 50px; }
-        h1 { font-size: 50px; text-align: center; }
-        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 50px; }
-        .card { background: white; color: black; padding: 30px; border-radius: 10px; }
-        .card h3 { color: #667eea; }
+        body { 
+            background: #000000; 
+            color: white; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            padding: 50px; 
+            margin: 0;
+        }
+        h1 { 
+            font-size: 50px; 
+            text-align: center; 
+            color: #E50914;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 60px;
+        }
+        .cards { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 25px; 
+            margin-top: 50px; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card { 
+            background: #141414; 
+            color: white; 
+            padding: 25px; 
+            border-radius: 8px; 
+            border: 2px solid #333333;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #E50914;
+            box-shadow: 0 8px 25px rgba(229, 9, 20, 0.3);
+        }
+        .card h3 { 
+            color: #E50914; 
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .card p {
+            color: #CCCCCC;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #E50914;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .card:hover::before {
+            transform: scaleX(1);
+        }
     </style>
 </head>
 <body>
