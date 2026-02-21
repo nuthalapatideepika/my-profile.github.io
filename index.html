@@ -161,6 +161,119 @@
         .card:nth-child(3):hover::before {
             transform: scaleX(1);
         }
+        
+        /* LinkedIn style for fourth card only */
+        .card:nth-child(4) { 
+            background: linear-gradient(135deg, #0077B5 0%, #005885 100%); 
+            color: white; 
+            border: 2px solid #0077B5;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:nth-child(4):hover {
+            transform: scale(1.05);
+            border-color: #00A0DC;
+            box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+        }
+        .card:nth-child(4) h3 { 
+            color: #FFFFFF; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .card:nth-child(4) p {
+            color: #E6F4FF;
+        }
+        .card:nth-child(4)::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #0077B5, #00A0DC);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .card:nth-child(4):hover::before {
+            transform: scaleX(1);
+        }
+        
+        /* YouTube style for fifth card only */
+        .card:nth-child(5) { 
+            background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%); 
+            color: white; 
+            border: 2px solid #FF0000;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:nth-child(5):hover {
+            transform: scale(1.05);
+            border-color: #FF4444;
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+        }
+        .card:nth-child(5) h3 { 
+            color: #FFFFFF; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .card:nth-child(5) p {
+            color: #FFE6E6;
+        }
+        .card:nth-child(5)::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #FF0000, #FF4444);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .card:nth-child(5):hover::before {
+            transform: scaleX(1);
+        }
+        
+        /* TikTok style for sixth card only */
+        .card:nth-child(6) { 
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); 
+            color: white; 
+            border: 2px solid #FF0050;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:nth-child(6):hover {
+            transform: scale(1.05);
+            border-color: #00F2EA;
+            box-shadow: 0 8px 25px rgba(255, 0, 80, 0.4);
+        }
+        .card:nth-child(6) h3 { 
+            color: #FF0050; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(255, 0, 80, 0.5);
+        }
+        .card:nth-child(6) p {
+            color: #00F2EA;
+            text-shadow: 0 0 5px rgba(0, 242, 234, 0.3);
+        }
+        .card:nth-child(6)::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #FF0050, #00F2EA);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .card:nth-child(6):hover::before {
+            transform: scaleX(1);
+        }
     </style>
 </head>
 <body>
