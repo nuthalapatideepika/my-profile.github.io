@@ -85,6 +85,43 @@
         .card:first-child:hover::before {
             transform: scaleX(1);
         }
+        
+        /* Prime Video style for second card only */
+        .card:nth-child(2) { 
+            background: linear-gradient(135deg, #00A8E1 0%, #003D5C 100%); 
+            color: white; 
+            border: 2px solid #00A8E1;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:nth-child(2):hover {
+            transform: scale(1.05);
+            border-color: #00D4FF;
+            box-shadow: 0 8px 25px rgba(0, 168, 225, 0.4);
+        }
+        .card:nth-child(2) h3 { 
+            color: #FFD700; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .card:nth-child(2) p {
+            color: #E6F3FF;
+        }
+        .card:nth-child(2)::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #FFD700, #00D4FF);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .card:nth-child(2):hover::before {
+            transform: scaleX(1);
+        }
     </style>
 </head>
 <body>
