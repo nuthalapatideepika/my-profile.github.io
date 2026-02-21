@@ -419,13 +419,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const href = method.getAttribute('href');
             
             if (href.startsWith('mailto:')) {
-                showNotification('📧 Opening email client...');
+                showNotification('Opening email client...');
             } else if (href.includes('linkedin')) {
                 showNotification('Opening LinkedIn profile...');
             } else if (href.includes('github')) {
-                showNotification('💻 Opening GitHub...');
+                showNotification('Opening GitHub...');
             } else if (href.startsWith('tel:')) {
-                showNotification('📞 Ready to call...');
+                showNotification('Ready to call...');
             }
             
             addRippleEffect(method);

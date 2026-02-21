@@ -249,7 +249,7 @@ function showMoreInfoModal() {
                     <p>📍 Vermillion, SD</p>
                 </div>
                 <div class="info-section">
-                    <h3>🔗 Links</h3>
+                    <h3>Links</h3>
                     <div class="modal-links">
                         <a href="https://linkedin.com/in/deepika-nuthalapati" target="_blank" rel="noopener">LinkedIn</a>
                         <a href="https://github.com/nuthalapatideepika" target="_blank" rel="noopener">GitHub</a>

@@ -418,7 +418,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const href = method.getAttribute('href');
             
             if (href.startsWith('mailto:')) {
-                showNotification('📧 Opening email client...');
+                showNotification('Opening email client...');
             } else if (href.includes('linkedin')) {
                 showNotification('Opening LinkedIn profile...');
             } else if (href.includes('github')) {

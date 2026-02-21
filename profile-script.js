@@ -136,13 +136,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const href = method.getAttribute('href');
             
             if (href.startsWith('mailto:')) {
-                showNetflixNotification('📧 Opening email...');
+                showNetflixNotification('Opening email...');
             } else if (href.includes('linkedin')) {
                 showNetflixNotification('Opening LinkedIn...');
             } else if (href.includes('github')) {
-                showNetflixNotification('💻 Opening GitHub...');
+                showNetflixNotification('Opening GitHub...');
             } else if (href.startsWith('tel:')) {
-                showNetflixNotification('📞 Ready to call...');
+                showNetflixNotification('Ready to call...');
             }
             
             addRippleEffect(method);
