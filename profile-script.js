@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (href.startsWith('mailto:')) {
                 showNetflixNotification('📧 Opening email...');
             } else if (href.includes('linkedin')) {
-                showNetflixNotification('💼 Opening LinkedIn...');
+                showNetflixNotification('Opening LinkedIn...');
             } else if (href.includes('github')) {
                 showNetflixNotification('💻 Opening GitHub...');
             } else if (href.startsWith('tel:')) {
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Welcome message with Netflix style
     setTimeout(() => {
-        showNetflixNotification('Welcome to Deepika\'s Portfolio! 🎬', 4000);
+        showNetflixNotification('Welcome to Deepika\'s Portfolio!', 4000);
     }, 2000);
 });
 

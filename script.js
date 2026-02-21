@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            showNotification(`🎬 Started viewing ${cardElement.querySelector('h3').textContent}`);
+            showNotification(`Started viewing ${cardElement.querySelector('h3').textContent}`);
         } else if (!data.completed) {
             // Resume from last position
             continueProgress(cardId, cardElement);
@@ -405,9 +405,8 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', () => {
             experienceCards.forEach(c => c.classList.remove('selected'));
             card.classList.add('selected');
-            
             const companyName = card.querySelector('h4').textContent;
-            showNotification(`📋 ${companyName} experience selected`);
+            showNotification(`${companyName} experience selected`);
         });
     });
 
@@ -421,11 +420,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (href.startsWith('mailto:')) {
                 showNotification('📧 Opening email client...');
             } else if (href.includes('linkedin')) {
-                showNotification('💼 Opening LinkedIn profile...');
+                showNotification('Opening LinkedIn profile...');
             } else if (href.includes('github')) {
-                showNotification('💻 Opening GitHub...');
+                showNotification('Opening GitHub...');
             } else if (href.startsWith('tel:')) {
-                showNotification('📞 Ready to call...');
+                showNotification('Ready to call...');
             }
             
             addRippleEffect(method);
@@ -626,7 +625,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Welcome notification
     setTimeout(() => {
-        showNotification(`🎬 Welcome to Deepika's Portfolio!`, 4000);
+        showNotification(`Welcome to Deepika's Portfolio!`, 4000);
     }, 2000);
 });
 

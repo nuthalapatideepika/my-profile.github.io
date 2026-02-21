@@ -226,11 +226,11 @@ function showMoreInfoModal() {
             </div>
             <div class="modal-body">
                 <div class="info-section">
-                    <h3>🎓 Education</h3>
+                    <h3>Education</h3>
                     <p>M.S. Computer Science, University of South Dakota (2024)</p>
                 </div>
                 <div class="info-section">
-                    <h3>🔬 Research Focus</h3>
+                    <h3>Research Focus</h3>
                     <p>Computer Vision & Applied AI with emphasis on:</p>
                     <ul>
                         <li>Multimodal spatiotemporal transformers</li>
@@ -240,11 +240,11 @@ function showMoreInfoModal() {
                     </ul>
                 </div>
                 <div class="info-section">
-                    <h3>🏛️ Affiliation</h3>
+                    <h3>Affiliation</h3>
                     <p>Graduate Research Assistant at USD 2AI Lab</p>
                 </div>
                 <div class="info-section">
-                    <h3>📧 Contact</h3>
+                    <h3>Contact</h3>
                     <p>Deepika.Nuthalapati@coyotes.usd.edu</p>
                     <p>📍 Vermillion, SD</p>
                 </div>
