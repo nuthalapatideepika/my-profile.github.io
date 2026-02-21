@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl all content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://nuthalapatideepika.github.io/my-profile.github.io/sitemap.xml
+
+# Prioritize important pages
+Allow: /index.html
+Allow: /platform-selector.html
+Allow: /media-hub.html
+Allow: /prime-portfolio.html
