@@ -1,13 +1,13 @@
 /* Netflix Style Variables */
 :root {
-    --netflix-red: #E50914;
-    --netflix-black: #000000;
-    --netflix-dark-gray: #141414;
-    --netflix-medium-gray: #2F2F2F;
-    --netflix-light-gray: #757575;
-    --netflix-white: #FFFFFF;
-    --netflix-hover: rgba(255, 255, 255, 0.1);
-    --netflix-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
+    --netflix-red: #2563eb;
+    --netflix-black: #ffffff;
+    --netflix-dark-gray: #f8f9fa;
+    --netflix-medium-gray: #e9ecef;
+    --netflix-light-gray: #6b7280;
+    --netflix-white: #333333;
+    --netflix-hover: rgba(0, 0, 0, 0.05);
+    --netflix-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Global Styles */

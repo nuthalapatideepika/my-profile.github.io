@@ -1,12 +1,12 @@
 /* Portfolio CSS */
 :root {
-    --brand-red: #E50914;
-    --dark-black: #141414;
-    --dark-gray: #181818;
+    --brand-red: #2563eb;
+    --dark-black: #ffffff;
+    --dark-gray: #f8f9fa;
     --medium-gray: #333333;
-    --light-gray: #564d4d;
-    --white: #ffffff;
-    --text-muted: #999999;
+    --light-gray: #6b7280;
+    --white: #333333;
+    --text-muted: #6b7280;
 }
 
 * {
@@ -17,8 +17,8 @@
 
 body {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: var(--dark-black);
-    color: var(--white);
+    background-color: #ffffff;
+    color: #333333;
     line-height: 1.4;
     overflow-x: hidden;
 }
