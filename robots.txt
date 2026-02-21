@@ -11,6 +11,10 @@ Allow: /
 # Sitemap location
 Sitemap: https://nuthalapatideepika.github.io/my-profile.github.io/sitemap.xml
 
+# Important external profiles
+# GitHub: https://github.com/nuthalapatideepika
+# LinkedIn: https://linkedin.com/in/deepika-nuthalapati
+
 # Prioritize important pages
 Allow: /index.html
 Allow: /platform-selector.html
