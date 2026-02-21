@@ -714,7 +714,6 @@ document.head.appendChild(netflixStyle);
     setTimeout(() => {
         showNotification('Welcome to Deepika\'s Portfolio! 🚀', 4000);
     }, 2000);
-});
 
 // CSS injection for animations
 const style = document.createElement('style');
