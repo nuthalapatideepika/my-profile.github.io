@@ -17,93 +17,52 @@
     flex-direction: column;
     
     /* � GORGEOUS GLASS CARD BASE - Enhanced Visibility � */
-    background: linear-gradient(135deg, 
-        rgba(255, 255, 255, 0.25) 0%, 
-        rgba(255, 255, 255, 0.18) 25%,
-        rgba(240, 248, 255, 0.22) 50%,
-        rgba(255, 255, 255, 0.15) 75%,
-        rgba(248, 250, 255, 0.2) 100%);
+    /* SOLID CARD DESIGN - No transparency */
+    background: rgba(0, 0, 0, 0.9);
     
-    /* Advanced glass effects with shine - Multiple browser support */
-    -webkit-backdrop-filter: blur(15px) saturate(150%) brightness(115%) contrast(108%);
-    backdrop-filter: blur(15px) saturate(150%) brightness(115%) contrast(108%);
+    /* Remove all glass effects */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     
-    /* Fallback for browsers without backdrop-filter */
-    background-color: rgba(255, 255, 255, 0.15);
+    /* Simple solid border */
+    border: 1px solid rgba(255, 255, 255, 0.2);
     
-    /* Elegant glass border with enhanced visibility */
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    /* Clean shadows without glass glow */
     box-shadow: 
-        /* Primary depth shadows */
-        0 20px 60px rgba(0, 0, 0, 0.18),
-        0 12px 30px rgba(0, 0, 0, 0.15),
-        0 6px 15px rgba(0, 0, 0, 0.12),
-        /* Inner shine highlights - More visible */
-        inset 0 1px 0 rgba(255, 255, 255, 0.5),
-        inset 0 -1px 0 rgba(255, 255, 255, 0.3),
-        /* Outer shine glow - Enhanced */
-        0 0 25px rgba(255, 255, 255, 0.15),
-        0 0 50px rgba(240, 248, 255, 0.08),
-        /* Additional glow for visibility */
-        0 0 75px rgba(255, 255, 255, 0.05);
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        0 12px 30px rgba(0, 0, 0, 0.2),
+        0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* 🌟 BRILLIANT SHINE OVERLAY ON CARDS 🌟 */
+/* REMOVE SHINE OVERLAY FROM CARDS */
 .card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, 
-        transparent 35%, 
-        rgba(255, 255, 255, 0.08) 42%,
-        rgba(255, 255, 255, 0.15) 50%,
-        rgba(255, 255, 255, 0.08) 58%,
-        transparent 65%);
-    transform: translateX(-100%) translateY(-100%) rotate(45deg);
-    transition: transform 0.8s ease-out;
-    pointer-events: none;
-    z-index: 1;
+    display: none;
 }
 
-/* ⭐ SPECTACULAR HOVER EFFECTS WITH ENHANCED GLASS MAGIC ⭐ */
+/* SOLID HOVER EFFECTS - NO GLASS */
 .card:hover {
     transform: translateY(-12px) scale(1.02);
     
-    /* Enhanced glass background with brilliant shine */
-    background: linear-gradient(135deg, 
-        rgba(255, 255, 255, 0.28) 0%, 
-        rgba(255, 255, 255, 0.22) 25%,
-        rgba(240, 248, 255, 0.25) 50%,
-        rgba(255, 255, 255, 0.19) 75%,
-        rgba(248, 250, 255, 0.23) 100%);
+    /* Keep solid background on hover */
+    background: rgba(0, 0, 0, 0.95);
     
-    /* Stronger glass effects with more blur and shine */
-    -webkit-backdrop-filter: blur(20px) saturate(170%) brightness(125%) contrast(115%);
-    backdrop-filter: blur(20px) saturate(170%) brightness(125%) contrast(115%);
+    /* No glass effects on hover */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     
-    /* Glowing glass border */
-    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    /* Enhanced solid border */
+    border: 1px solid rgba(255, 255, 255, 0.3);
     
-    /* AMAZING hover shadows with enhanced glass glow */
+    /* Enhanced shadows without glass glow */
     box-shadow: 
-        0 40px 120px rgba(0, 0, 0, 0.18),
-        0 25px 60px rgba(0, 0, 0, 0.15),
-        0 10px 30px rgba(0, 0, 0, 0.12),
-        /* Enhanced inner shine */
-        inset 0 2px 0 rgba(255, 255, 255, 0.6),
-        inset 0 -2px 0 rgba(255, 255, 255, 0.4),
-        /* Brilliant outer glow with multiple layers */
-        0 0 35px rgba(255, 255, 255, 0.2),
-        0 0 70px rgba(240, 248, 255, 0.12),
-        0 0 105px rgba(255, 255, 255, 0.08);
+        0 40px 120px rgba(0, 0, 0, 0.4),
+        0 25px 60px rgba(0, 0, 0, 0.3),
+        0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* 💫 SHINE SWEEP ANIMATION ON HOVER 💫 */
+/* NO SHINE SWEEP ON HOVER */
 .card:hover::before {
-    transform: translateX(100%) translateY(100%) rotate(45deg);
+    display: none;
 }
 
 body {
