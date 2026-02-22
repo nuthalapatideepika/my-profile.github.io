@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
+/* ✨ SPECTACULAR GLASS CARDS WITH BRILLIANT SHINE EFFECTS ✨ */
 .card {
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     cursor: pointer;
@@ -15,101 +15,228 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.08);
-    -webkit-backdrop-filter: blur(25px) saturate(130%) brightness(105%) contrast(102%);
-    backdrop-filter: blur(25px) saturate(130%) brightness(105%) contrast(102%);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 
-        0 25px 50px rgba(0, 0, 0, 0.06),
-        0 15px 30px rgba(0, 0, 0, 0.04),
-        0 8px 16px rgba(0, 0, 0, 0.02),
-        inset 0 2px 6px rgba(255, 255, 255, 0.25),
-        inset 0 -1px 3px rgba(0, 0, 0, 0.02);
     
-    /* STUNNING frosted glass effect */
-    background-image: 
-        linear-gradient(135deg, 
-            rgba(255, 255, 255, 0.12) 0%, 
-            rgba(255, 255, 255, 0.02) 50%, 
-            rgba(255, 255, 255, 0.08) 100%);
+    /* 💎 GORGEOUS GLASS CARD BASE 💎 */
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.18) 0%, 
+        rgba(255, 255, 255, 0.12) 25%,
+        rgba(240, 248, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.09) 75%,
+        rgba(248, 250, 255, 0.13) 100%);
+    
+    /* Advanced glass effects with shine */
+    -webkit-backdrop-filter: blur(15px) saturate(150%) brightness(115%) contrast(108%);
+    backdrop-filter: blur(15px) saturate(150%) brightness(115%) contrast(108%);
+    
+    /* Elegant glass border with shine */
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    
+    /* MAGNIFICENT glass shadows with depth */
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.15),
+        0 12px 30px rgba(0, 0, 0, 0.12),
+        0 6px 15px rgba(0, 0, 0, 0.08),
+        /* Inner shine highlights */
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.25),
+        /* Outer shine glow */
+        0 0 25px rgba(255, 255, 255, 0.12),
+        0 0 50px rgba(240, 248, 255, 0.06);
 }
 
+/* 🌟 BRILLIANT SHINE OVERLAY ON CARDS 🌟 */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, 
+        transparent 35%, 
+        rgba(255, 255, 255, 0.08) 42%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.08) 58%,
+        transparent 65%);
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    transition: transform 0.8s ease-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ⭐ SPECTACULAR HOVER EFFECTS WITH ENHANCED GLASS MAGIC ⭐ */
 .card:hover {
     transform: translateY(-12px) scale(1.02);
+    
+    /* Enhanced glass background with brilliant shine */
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.28) 0%, 
+        rgba(255, 255, 255, 0.22) 25%,
+        rgba(240, 248, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0.19) 75%,
+        rgba(248, 250, 255, 0.23) 100%);
+    
+    /* Stronger glass effects with more blur and shine */
+    -webkit-backdrop-filter: blur(20px) saturate(170%) brightness(125%) contrast(115%);
+    backdrop-filter: blur(20px) saturate(170%) brightness(125%) contrast(115%);
+    
+    /* Glowing glass border */
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    
+    /* AMAZING hover shadows with enhanced glass glow */
     box-shadow: 
-        0 40px 80px rgba(0, 0, 0, 0.05),
-        0 25px 50px rgba(0, 0, 0, 0.025),
-        0 10px 25px rgba(0, 0, 0, 0.012),
-        inset 0 3px 10px rgba(255, 255, 255, 0.25),
-        inset 0 -3px 6px rgba(0, 0, 0, 0.003);
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(55px) saturate(100%) brightness(100%) contrast(100%);
-    backdrop-filter: blur(55px) saturate(100%) brightness(100%) contrast(100%);
+        0 40px 120px rgba(0, 0, 0, 0.18),
+        0 25px 60px rgba(0, 0, 0, 0.15),
+        0 10px 30px rgba(0, 0, 0, 0.12),
+        /* Enhanced inner shine */
+        inset 0 2px 0 rgba(255, 255, 255, 0.6),
+        inset 0 -2px 0 rgba(255, 255, 255, 0.4),
+        /* Brilliant outer glow with multiple layers */
+        0 0 35px rgba(255, 255, 255, 0.2),
+        0 0 70px rgba(240, 248, 255, 0.12),
+        0 0 105px rgba(255, 255, 255, 0.08);
+}
+
+/* 💫 SHINE SWEEP ANIMATION ON HOVER 💫 */
+.card:hover::before {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
 }
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background: 
-        /* 🔥 STUNNING FROSTED GLASS TEXTURE - Like your amazing images! 🔥 */
-        
-        /* PERFECT scattered water droplets with incredible realism */
-        radial-gradient(circle 4px at 15% 12%, rgba(255, 255, 255, 0.8) 0%, transparent 70%),
-        radial-gradient(circle 3px at 85% 8%, rgba(255, 255, 255, 0.7) 0%, transparent 70%),
-        radial-gradient(circle 2px at 45% 5%, rgba(255, 255, 255, 0.6) 0%, transparent 70%),
-        radial-gradient(circle 5px at 72% 15%, rgba(255, 255, 255, 0.75) 0%, transparent 70%),
-        radial-gradient(circle 3px at 25% 18%, rgba(255, 255, 255, 0.65) 0%, transparent 70%),
-        
-        radial-gradient(circle 4px at 38% 22%, rgba(255, 255, 255, 0.7) 0%, transparent 70%),
-        radial-gradient(circle 6px at 92% 28%, rgba(255, 255, 255, 0.8) 0%, transparent 70%),
-        radial-gradient(circle 2px at 8% 35%, rgba(255, 255, 255, 0.6) 0%, transparent 70%),
-        radial-gradient(circle 5px at 68% 32%, rgba(255, 255, 255, 0.75) 0%, transparent 70%),
-        radial-gradient(circle 3px at 52% 38%, rgba(255, 255, 255, 0.65) 0%, transparent 70%),
-        
-        radial-gradient(circle 7px at 18% 45%, rgba(255, 255, 255, 0.85) 0%, transparent 70%),
-        radial-gradient(circle 4px at 78% 42%, rgba(255, 255, 255, 0.7) 0%, transparent 70%),
-        radial-gradient(circle 3px at 95% 48%, rgba(255, 255, 255, 0.65) 0%, transparent 70%),
-        radial-gradient(circle 5px at 32% 52%, rgba(255, 255, 255, 0.75) 0%, transparent 70%),
-        radial-gradient(circle 2px at 65% 55%, rgba(255, 255, 255, 0.6) 0%, transparent 70%),
-        
-        radial-gradient(circle 6px at 12% 58%, rgba(255, 255, 255, 0.8) 0%, transparent 70%),
-        radial-gradient(circle 4px at 88% 62%, rgba(255, 255, 255, 0.7) 0%, transparent 70%),
-        radial-gradient(circle 3px at 42% 65%, rgba(255, 255, 255, 0.65) 0%, transparent 70%),
-        radial-gradient(circle 5px at 75% 68%, rgba(255, 255, 255, 0.75) 0%, transparent 70%),
-        radial-gradient(circle 2px at 22% 72%, rgba(255, 255, 255, 0.6) 0%, transparent 70%),
-        
-        radial-gradient(circle 8px at 58% 75%, rgba(255, 255, 255, 0.9) 0%, transparent 70%),
-        radial-gradient(circle 3px at 8% 78%, rgba(255, 255, 255, 0.65) 0%, transparent 70%),
-        radial-gradient(circle 4px at 92% 82%, rgba(255, 255, 255, 0.7) 0%, transparent 70%),
-        radial-gradient(circle 6px at 35% 85%, rgba(255, 255, 255, 0.8) 0%, transparent 70%),
-        radial-gradient(circle 2px at 82% 88%, rgba(255, 255, 255, 0.6) 0%, transparent 70%),
-        
-        radial-gradient(circle 5px at 15% 92%, rgba(255, 255, 255, 0.75) 0%, transparent 70%),
-        radial-gradient(circle 3px at 65% 95%, rgba(255, 255, 255, 0.65) 0%, transparent 70%),
-        radial-gradient(circle 4px at 48% 88%, rgba(255, 255, 255, 0.7) 0%, transparent 70%),
-        
-        /* AMAZING frosted glass texture with subtle patterns */
-        radial-gradient(ellipse 200px 100px at 20% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 60%),
-        radial-gradient(ellipse 150px 80px at 80% 70%, rgba(255, 255, 255, 0.025) 0%, transparent 50%),
-        radial-gradient(ellipse 180px 90px at 60% 15%, rgba(255, 255, 255, 0.02) 0%, transparent 55%),
-        
-        /* BEAUTIFUL frosted glass base - exactly like your images! */
-        linear-gradient(135deg, 
-            rgba(248, 252, 255, 0.95) 0%, 
-            rgba(250, 254, 255, 0.98) 20%, 
-            rgba(246, 250, 255, 0.92) 40%, 
-            rgba(252, 255, 255, 0.99) 60%, 
-            rgba(249, 253, 255, 0.94) 80%, 
-            rgba(251, 254, 255, 0.97) 100%);
-    
+    margin: 0;
     min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    
+    /* 🌃 DARK BASE BACKGROUND LAYER */
+    background: 
+        /* Dark gradient base for depth */
+        linear-gradient(135deg, 
+            rgba(20, 25, 35, 1) 0%, 
+            rgba(15, 20, 30, 1) 25%, 
+            rgba(25, 30, 40, 1) 50%, 
+            rgba(18, 23, 33, 1) 75%, 
+            rgba(22, 27, 37, 1) 100%);
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
     color: #333;
     line-height: 1.6;
-    position: relative;
+}
+
+/* 🧊 FROSTED GLASS LAYER WITH ENHANCED DROPLET TEXTURE */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
     
-    /* INCREDIBLE frosted glass filter effects */
-    backdrop-filter: blur(1px) saturate(120%) brightness(103%);
-    -webkit-backdrop-filter: blur(1px) saturate(120%) brightness(103%);
+    /* Glass frost texture with enhanced droplet patterns */
+    background: 
+        /* Multiple SVG textures for realistic glass grain */
+        url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.12'/%3E%3C/svg%3E"),
+        
+        /* Micro droplet texture on glass surface */
+        radial-gradient(circle 1px at 23% 17%, rgba(255,255,255,0.3) 0%, transparent 70%),
+        radial-gradient(circle 1px at 67% 23%, rgba(255,255,255,0.25) 0%, transparent 70%),
+        radial-gradient(circle 1px at 41% 31%, rgba(255,255,255,0.35) 0%, transparent 70%),
+        radial-gradient(circle 1px at 89% 29%, rgba(255,255,255,0.28) 0%, transparent 70%),
+        radial-gradient(circle 1px at 14% 47%, rgba(255,255,255,0.32) 0%, transparent 70%),
+        radial-gradient(circle 1px at 73% 51%, rgba(255,255,255,0.27) 0%, transparent 70%),
+        radial-gradient(circle 1px at 56% 41%, rgba(255,255,255,0.33) 0%, transparent 70%),
+        radial-gradient(circle 1px at 31% 63%, rgba(255,255,255,0.29) 0%, transparent 70%),
+        radial-gradient(circle 1px at 84% 67%, rgba(255,255,255,0.31) 0%, transparent 70%),
+        radial-gradient(circle 1px at 47% 73%, rgba(255,255,255,0.26) 0%, transparent 70%),
+        radial-gradient(circle 1px at 19% 81%, rgba(255,255,255,0.34) 0%, transparent 70%),
+        radial-gradient(circle 1px at 76% 87%, rgba(255,255,255,0.3) 0%, transparent 70%),
+        
+        /* Small droplet clusters for texture */
+        radial-gradient(circle 2px at 35% 19%, rgba(255,255,255,0.15) 0%, transparent 80%),
+        radial-gradient(circle 2px at 71% 34%, rgba(255,255,255,0.18) 0%, transparent 80%),
+        radial-gradient(circle 2px at 26% 52%, rgba(255,255,255,0.16) 0%, transparent 80%),
+        radial-gradient(circle 2px at 83% 58%, rgba(255,255,255,0.17) 0%, transparent 80%),
+        radial-gradient(circle 2px at 52% 74%, rgba(255,255,255,0.15) 0%, transparent 80%),
+        radial-gradient(circle 2px at 18% 89%, rgba(255,255,255,0.19) 0%, transparent 80%),
+        
+        /* Frosted glass overlay with grey-blue tint */
+        linear-gradient(135deg, 
+            rgba(210, 220, 235, 0.75) 0%, 
+            rgba(220, 230, 240, 0.8) 25%, 
+            rgba(200, 215, 230, 0.72) 50%, 
+            rgba(225, 235, 245, 0.78) 75%, 
+            rgba(205, 220, 235, 0.76) 100%);
+    
+    /* Enhanced glass blur effect */
+    -webkit-backdrop-filter: blur(3px) saturate(120%) brightness(105%);
+    backdrop-filter: blur(3px) saturate(120%) brightness(105%);
+}
+
+/* 💧 WATER DROPLETS LAYER */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    
+    /* Beautiful water droplets on glass */
+    background: 
+        /* Large impressive water droplets */
+        radial-gradient(ellipse 15px 20px at 12% 18%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.5) 30%, rgba(255,255,255,0.15) 60%, transparent 80%),
+        radial-gradient(ellipse 12px 16px at 88% 12%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.45) 30%, rgba(255,255,255,0.12) 60%, transparent 80%),
+        radial-gradient(ellipse 18px 24px at 25% 35%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 30%, rgba(255,255,255,0.18) 60%, transparent 80%),
+        radial-gradient(ellipse 10px 14px at 75% 28%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.1) 60%, transparent 80%),
+        radial-gradient(ellipse 20px 26px at 45% 55%, rgba(255,255,255,1.0) 0%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0.2) 60%, transparent 80%),
+        radial-gradient(ellipse 14px 18px at 85% 45%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.45) 30%, rgba(255,255,255,0.12) 60%, transparent 80%),
+        radial-gradient(ellipse 16px 22px at 15% 70%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.5) 30%, rgba(255,255,255,0.15) 60%, transparent 80%),
+        radial-gradient(ellipse 22px 28px at 65% 75%, rgba(255,255,255,1.0) 0%, rgba(255,255,255,0.65) 30%, rgba(255,255,255,0.22) 60%, transparent 80%),
+        radial-gradient(ellipse 11px 15px at 92% 82%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.1) 60%, transparent 80%),
+        radial-gradient(ellipse 17px 23px at 35% 88%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 30%, rgba(255,255,255,0.18) 60%, transparent 80%),
+        
+        /* Medium droplets */
+        radial-gradient(ellipse 8px 12px at 58% 22%, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.35) 40%, transparent 70%),
+        radial-gradient(ellipse 6px 10px at 28% 48%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.3) 40%, transparent 70%),
+        radial-gradient(ellipse 9px 13px at 78% 62%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.38) 40%, transparent 70%),
+        radial-gradient(ellipse 7px 11px at 48% 78%, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.33) 40%, transparent 70%),
+        
+        /* Small detailed droplets */
+        radial-gradient(ellipse 4px 6px at 38% 15%, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.25) 50%, transparent 80%),
+        radial-gradient(ellipse 3px 5px at 68% 32%, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.22) 50%, transparent 80%),
+        radial-gradient(ellipse 5px 7px at 22% 58%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.28) 50%, transparent 80%),
+        radial-gradient(ellipse 4px 6px at 82% 68%, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.25) 50%, transparent 80%),
+        radial-gradient(ellipse 3px 5px at 52% 92%, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.22) 50%, transparent 80%);
+    
+    /* Subtle animation for living glass effect */
+    animation: dropletShimmer 15s ease-in-out infinite;
+}
+
+@keyframes dropletShimmer {
+    0%, 100% { 
+        opacity: 1;
+        filter: brightness(1) contrast(1);
+    }
+    25% { 
+        opacity: 0.95;
+        filter: brightness(1.02) contrast(1.01);
+    }
+    50% { 
+        opacity: 0.98;
+        filter: brightness(0.98) contrast(0.99);
+    }
+    75% { 
+        opacity: 0.96;
+        filter: brightness(1.01) contrast(1.02);
+    }
 }
 
 @keyframes subtleShimmer {
@@ -198,9 +325,46 @@ body::before {
 h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #000000;
-    font-size: 2.5em;
-    font-weight: 300;
+    
+    /* 🌟 PERFECT COLOR OPTIONS - Choose your favorite! 🌟 */
+    
+    /* Option 1: Bright White (Current) - Clean and crisp */
+    color: #ffffff;
+    
+    /* Option 2: Warm Gold - Luxury and elegance */
+    /* color: #FFD700; */
+    
+    /* Option 3: Electric Blue - Modern and tech-focused */
+    /* color: #00D4FF; */
+    
+    /* Option 4: Soft Silver - Professional and sleek */
+    /* color: #E8E8E8; */
+    
+    /* Option 5: Gradient Text - Multi-color brilliance */
+    /* background: linear-gradient(45deg, #FFD700, #00D4FF, #FF6B6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+    
+    font-size: 3em;
+    font-weight: 400;
+    text-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.8),
+        0 2px 4px rgba(0, 0, 0, 0.6),
+        0 1px 2px rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 10;
+    
+    /* CLEAN TEXT - No background highlighting */
+    background: none;
+    padding: 20px 0px;
+    border-radius: 0px;
+    
+    /* Remove all glass effects */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
 }
 
 .cards-grid {
@@ -945,23 +1109,236 @@ h1 {
     padding: 0 16px 16px;
 }
 
-.action-btn {
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
+/* 🌊 SPECTACULAR 5D WATER DROPLETS WITH BRILLIANT SHINE & GLASS EFFECTS! 🌊 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    
+    /* 💎 AMAZING 5D LAYERED DROPLET EFFECTS WITH SHINE! 💎 */
+    background: 
+        /* LAYER 1: MEGA 3D DROPLETS with brilliant shine highlights */
+        radial-gradient(ellipse 25px 35px at 15% 20%, 
+            rgba(255,255,255,1.0) 0%, 
+            rgba(255,255,255,0.9) 5%, 
+            rgba(255,255,255,0.6) 20%, 
+            rgba(200,230,255,0.4) 40%, 
+            rgba(255,255,255,0.2) 65%, 
+            rgba(180,220,255,0.1) 80%, 
+            transparent 95%),
+        
+        /* Brilliant shine spot on first droplet */
+        radial-gradient(ellipse 8px 12px at 12% 16%, 
+            rgba(255,255,255,1.0) 0%, 
+            rgba(255,255,255,0.8) 30%, 
+            transparent 70%),
+            
+        radial-gradient(ellipse 30px 40px at 75% 25%, 
+            rgba(255,255,255,0.95) 0%, 
+            rgba(255,255,255,0.85) 5%, 
+            rgba(255,255,255,0.55) 20%, 
+            rgba(200,230,255,0.35) 40%, 
+            rgba(255,255,255,0.18) 65%, 
+            rgba(180,220,255,0.08) 80%, 
+            transparent 95%),
+        
+        /* Shine spot on second droplet */
+        radial-gradient(ellipse 10px 14px at 72% 21%, 
+            rgba(255,255,255,1.0) 0%, 
+            rgba(255,255,255,0.7) 30%, 
+            transparent 70%),
+            
+        radial-gradient(ellipse 35px 45px at 35% 60%, 
+            rgba(255,255,255,1.0) 0%, 
+            rgba(255,255,255,0.9) 5%, 
+            rgba(255,255,255,0.65) 20%, 
+            rgba(200,230,255,0.45) 40%, 
+            rgba(255,255,255,0.25) 65%, 
+            rgba(180,220,255,0.12) 80%, 
+            transparent 95%),
+        
+        /* Shine spot on third droplet */
+        radial-gradient(ellipse 12px 16px at 32% 56%, 
+            rgba(255,255,255,1.0) 0%, 
+            rgba(255,255,255,0.9) 30%, 
+            transparent 70%),
+            
+        radial-gradient(ellipse 28px 38px at 85% 70%, 
+            rgba(255,255,255,0.98) 0%, 
+            rgba(255,255,255,0.88) 5%, 
+            rgba(255,255,255,0.58) 20%, 
+            rgba(200,230,255,0.38) 40%, 
+            rgba(255,255,255,0.2) 65%, 
+            rgba(180,220,255,0.1) 80%, 
+            transparent 95%),
+        
+        /* Shine spot on fourth droplet */
+        radial-gradient(ellipse 9px 13px at 82% 66%, 
+            rgba(255,255,255,1.0) 0%, 
+            rgba(255,255,255,0.8) 30%, 
+            transparent 70%),
+        
+        /* LAYER 2: 4D DROPLETS with refraction and shine effects */
+        radial-gradient(ellipse 18px 24px at 25% 15%, 
+            rgba(255,255,255,0.9) 0%, 
+            rgba(220,240,255,0.7) 10%, 
+            rgba(180,220,255,0.5) 25%, 
+            rgba(255,255,255,0.3) 50%, 
+            rgba(160,200,255,0.15) 75%, 
+            transparent 95%),
+        
+        /* Shine highlights for medium droplets */
+        radial-gradient(ellipse 6px 8px at 22% 12%, rgba(255,255,255,0.9) 0%, transparent 60%),
+        radial-gradient(ellipse 7px 9px at 62% 32%, rgba(255,255,255,0.85) 0%, transparent 60%),
+        radial-gradient(ellipse 8px 10px at 42% 77%, rgba(255,255,255,0.9) 0%, transparent 60%),
+        
+        /* LAYER 3: Glass refraction patterns */
+        conic-gradient(from 45deg at 30% 30%, 
+            rgba(255,255,255,0.1) 0deg, 
+            rgba(200,230,255,0.08) 45deg,
+            transparent 90deg, 
+            rgba(255,255,255,0.06) 135deg, 
+            transparent 180deg, 
+            rgba(180,220,255,0.04) 225deg,
+            transparent 270deg,
+            rgba(255,255,255,0.08) 315deg),
+        
+        /* LAYER 4: MICRO DROPLET CLUSTERS with shine */
+        radial-gradient(circle 4px at 38% 18%, 
+            rgba(255,255,255,0.8) 0%, 
+            rgba(220,240,255,0.4) 40%, 
+            transparent 80%),
+        radial-gradient(circle 3px at 68% 32%, 
+            rgba(255,255,255,0.75) 0%, 
+            rgba(200,230,255,0.35) 40%, 
+            transparent 80%),
+        radial-gradient(circle 5px at 22% 58%, 
+            rgba(255,255,255,0.85) 0%, 
+            rgba(220,240,255,0.45) 40%, 
+            transparent 80%),
+        radial-gradient(circle 4px at 82% 68%, 
+            rgba(255,255,255,0.8) 0%, 
+            rgba(200,230,255,0.4) 40%, 
+            transparent 80%),
+        
+        /* Micro shine spots */
+        radial-gradient(circle 1px at 36% 16%, rgba(255,255,255,0.9) 0%, transparent 70%),
+        radial-gradient(circle 1px at 66% 30%, rgba(255,255,255,0.85) 0%, transparent 70%),
+        radial-gradient(circle 1px at 20% 56%, rgba(255,255,255,0.9) 0%, transparent 70%),
+        radial-gradient(circle 1px at 80% 66%, rgba(255,255,255,0.8) 0%, transparent 70%),
+        
+        /* Advanced SVG glass texture */
+        url("data:image/svg+xml,%3Csvg width='600' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='glass-noise'%3E%3CfeTurbulence baseFrequency='1.2' numOctaves='8' stitchTiles='stitch'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' filter='url(%23glass-noise)' opacity='0.08'/%3E%3C/svg%3E"),
+        
+        /* GORGEOUS FROSTED GLASS BASE with depth */
+        linear-gradient(135deg, 
+            rgba(210, 220, 235, 0.82) 0%, 
+            rgba(220, 230, 245, 0.87) 20%, 
+            rgba(200, 215, 230, 0.79) 40%, 
+            rgba(230, 240, 250, 0.85) 60%, 
+            rgba(205, 220, 235, 0.83) 80%, 
+            rgba(215, 225, 240, 0.88) 100%);
+    
+    /* ULTRA-ADVANCED GLASS EFFECTS */
+    -webkit-backdrop-filter: blur(8px) saturate(140%) brightness(120%) contrast(108%);
+    backdrop-filter: blur(8px) saturate(140%) brightness(120%) contrast(108%);
+    
+    /* SPECTACULAR SHINE ANIMATION */
+    animation: brilliantDropletShine 25s ease-in-out infinite;
 }
 
-.action-btn.primary {
-    background: #0A66C2;
-    color: white;
-    border: 1px solid #0A66C2;
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    
+    /* 🌟 GLASS DEPTH & REFLECTION LAYER 🌟 */
+    background: 
+        /* Depth shadows with glass tint */
+        radial-gradient(ellipse 27px 37px at 16% 21%, rgba(0,20,40,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 32px 42px at 76% 26%, rgba(0,20,40,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 37px 47px at 36% 61%, rgba(0,20,40,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 30px 40px at 86% 71%, rgba(0,20,40,0.14) 0%, transparent 70%),
+        
+        /* Glass reflection streaks */
+        linear-gradient(45deg, 
+            transparent 20%, 
+            rgba(255,255,255,0.04) 30%, 
+            rgba(255,255,255,0.08) 50%, 
+            rgba(255,255,255,0.04) 70%, 
+            transparent 80%),
+        
+        /* Atmospheric glass haze */
+        radial-gradient(ellipse 70% 50% at 50% 30%, rgba(200,230,255,0.03), transparent 80%),
+        radial-gradient(ellipse 60% 70% at 50% 70%, rgba(220,240,255,0.02), transparent 75%);
+    
+    animation: glassDepthShine 30s ease-in-out infinite reverse;
 }
 
-.action-btn.secondary {
-    background: transparent;
-    color: #0A66C2;
-    border: 1px solid #0A66C2;
+/* 💎 BRILLIANT SHINE ANIMATION KEYFRAMES 💎 */
+@keyframes brilliantDropletShine {
+    0%, 100% { 
+        filter: brightness(1.0) contrast(1.0) saturate(1.0) hue-rotate(0deg);
+        transform: scale(1.0) rotate(0deg);
+    }
+    15% { 
+        filter: brightness(1.15) contrast(1.08) saturate(1.25) hue-rotate(3deg);
+        transform: scale(1.01) rotate(0.8deg);
+    }
+    30% { 
+        filter: brightness(1.25) contrast(1.12) saturate(1.35) hue-rotate(-2deg);
+        transform: scale(1.02) rotate(-0.5deg);
+    }
+    45% { 
+        filter: brightness(1.18) contrast(1.06) saturate(1.2) hue-rotate(2.5deg);
+        transform: scale(1.015) rotate(0.3deg);
+    }
+    60% { 
+        filter: brightness(1.22) contrast(1.1) saturate(1.3) hue-rotate(-1.5deg);
+        transform: scale(1.025) rotate(-0.2deg);
+    }
+    75% { 
+        filter: brightness(1.12) contrast(1.04) saturate(1.15) hue-rotate(1deg);
+        transform: scale(1.01) rotate(0.1deg);
+    }
 }
+
+@keyframes glassDepthShine {
+    0%, 100% { 
+        opacity: 0.85;
+        transform: translateZ(0) rotateX(0deg) rotateY(0deg) scale(1.0);
+        filter: brightness(1.0) blur(0px);
+    }
+    20% { 
+        opacity: 0.95;
+        transform: translateZ(3px) rotateX(1.5deg) rotateY(0.8deg) scale(1.005);
+        filter: brightness(1.05) blur(0.5px);
+    }
+    40% { 
+        opacity: 0.9;
+        transform: translateZ(5px) rotateX(-0.8deg) rotateY(-1.2deg) scale(1.01);
+        filter: brightness(1.08) blur(1px);
+    }
+    60% { 
+        opacity: 1.0;
+        transform: translateZ(4px) rotateX(1.2deg) rotateY(0.5deg) scale(1.008);
+        filter: brightness(1.03) blur(0.3px);
+    }
+    80% { 
+        opacity: 0.88;
+        transform: translateZ(2px) rotateX(-0.3deg) rotateY(-0.6deg) scale(1.003);
+        filter: brightness(1.02) blur(0.2px);
+    }
+}
+
+/* Enhanced card glass effects */
